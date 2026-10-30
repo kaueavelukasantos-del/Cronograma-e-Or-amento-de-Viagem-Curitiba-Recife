@@ -1,0 +1,79 @@
+/* Configurações Gerais e Cores */
+:root {
+    --cor-fundo: #f4f6f9;
+    --cor-card: #ffffff;
+    --cor-principal: #7c4dff; /* Roxo baseado no cabeçalho da planilha */
+    --cor-texto: #333333;
+    --cor-borda: #dddddd;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--cor-card);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* Estilização da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid var(--cor-borda);
+}
+
+th {
+    background-color: var(--cor-principal);
+    color: white;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1edff;
+}
+
+tfoot {
+    background-color: #f4f4f4;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    th, td {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
